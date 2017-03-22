@@ -2,25 +2,26 @@
   "name": "example-jade-less",
   "version": "1.0.0",
   "description": "example-jade-less project to build web pages",
+  "engines": {
+    "node": "6.9.1"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "postinstall": "gulp default"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idmore/example-pug-lesss.git"
+    "url": "git+https://github.com/rodrigofront/test-ds.git"
   },
   "keywords": [
     "pug",
     "less"
   ],
-  "author": "yussan",
+  "author": "Rodrigo Nogueira",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/idmore/example-pug-lesss/issues"
-  },
-  "homepage": "https://github.com/idmore/example-pug-lesss#readme",
+
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
