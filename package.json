@@ -1,7 +1,7 @@
 {
-  "name": "example-jade-less",
+  "name": "dasphere",
   "version": "1.0.0",
-  "description": "example-jade-less project to build web pages",
+  "description": "test",
   "engines": {
     "node": "6.9.1"
   },
