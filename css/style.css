@@ -1,0 +1,451 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700);
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?72573639');
+  src: url('../font/fontello.eot?72573639#iefix') format('embedded-opentype'), url('../font/fontello.woff2?72573639') format('woff2'), url('../font/fontello.woff?72573639') format('woff'), url('../font/fontello.ttf?72573639') format('truetype'), url('../font/fontello.svg?72573639#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?72573639#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-th:before {
+  content: '\e800';
+}
+/* '' */
+.icon-thumbs-up:before {
+  content: '\e801';
+}
+/* '' */
+.icon-search:before {
+  content: '\e802';
+}
+/* '' */
+.icon-cog-1:before {
+  content: '\e803';
+}
+/* '' */
+.icon-lock-filled:before {
+  content: '\e804';
+}
+/* '' */
+.icon-thumbs-down:before {
+  content: '\e805';
+}
+/* '' */
+.icon-comment:before {
+  content: '\e806';
+}
+/* '' */
+.icon-reply-all:before {
+  content: '\e807';
+}
+/* '' */
+.icon-forward:before {
+  content: '\e808';
+}
+/* '' */
+.icon-plus:before {
+  content: '\e809';
+}
+/* '' */
+.icon-dot-3:before {
+  content: '\e80a';
+}
+/* '' */
+.icon-angle-up:before {
+  content: '\f106';
+}
+/* '' */
+.icon-angle-down:before {
+  content: '\f107';
+}
+/* '' */
+.btn {
+  display: block;
+  height: 35px;
+  padding: 0 40px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+#dashboard {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background: url("../images/header.png") no-repeat;
+  background-size: 100%;
+}
+.apps {
+  display: flex;
+}
+.app {
+  font-family: "Poppins";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #fff;
+  font-style: normal;
+}
+.app.youtube .app-header {
+  background-color: #e62117;
+}
+.app.youtube .app-content--login {
+  background-color: rgba(230, 33, 23, 0.9);
+}
+.app + .app {
+  padding-left: 10px;
+}
+.app.medium {
+  width: 25%;
+}
+.app.large {
+  width: 40%;
+}
+.app .app-header {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #fff;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.app .app-header .app-header--videos--config a:first-child {
+  margin-right: 15px;
+}
+.app .app-content {
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.app .app-content--widget {
+  overflow-y: auto;
+  max-height: 450px;
+  padding: 10px;
+}
+.app .app-content--widget::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+.app .app-content--widget::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.app .app-content--widget::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: #e62117;
+}
+.app .app-content--search {
+  position: relative;
+}
+.app .app-content--search input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 45px;
+  background-color: #c01008;
+  border: 0;
+  color: #fff;
+  font-style: italic;
+}
+.app .app-content--search input:focus,
+.app .app-content--search input:active {
+  border: 0;
+  outline: 0;
+}
+.app .app-content--search .icon-search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: .7;
+  font-size: 20px;
+}
+.app .app-content--login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .app-content--login .app-content--title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.app .app-content--login .app-content--title strong {
+  font-weight: 600;
+}
+.app .app-content--login .btn {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #e62117;
+  font-style: normal;
+}
+.app .app-content--login .app-content--not-account {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.widget {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #7e838e;
+}
+.widget a {
+  color: #7e838e;
+}
+.widget .widget-header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+.widget .widget-header--profileImage {
+  margin-right: 10px;
+}
+.widget .widget-header--profileImage img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.widget .widget-header--info--name {
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #262626;
+  font-style: normal;
+  margin-bottom: 3px;
+}
+.widget .widget-header--info--date,
+.widget .widget-header--info--status {
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #7e838e;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 20px;
+}
+.widget .widget-video--iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.widget .widget-video--iframe.video-medium {
+  padding-bottom: 23%;
+}
+.widget .widget-video--iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.widget .widget-video--info {
+  padding: 10px;
+}
+.widget .widget-video--info--header {
+  display: flex;
+  justify-content: space-between;
+}
+.widget .widget-video--info--views {
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7e838e;
+  font-style: normal;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #167ac6;
+}
+.widget .widget-video--info--social a {
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7e838e;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 20px;
+}
+.widget .widget-video--info--social a:first-child {
+  color: #e62117;
+}
+.widget .widget-video--info--social i {
+  font-size: 16px;
+}
+.widget .widget-video--info--title {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #262626;
+  font-style: normal;
+}
+.widget .widget-video--info--actions i {
+  font-size: 16px;
+}
+.widget .widget-video--info--social a {
+  color: #7e838e;
+}
+.widget .widget-video--info--description {
+  margin-top: 15px;
+}
+.widget .widget-video--info--description--show {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #fff;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #b2b2b2;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info {
+  display: flex;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info--image {
+  margin-right: 10px;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info--image img {
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info .widget-video--info--comments--info--content {
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #4f4f4f;
+  font-style: normal;
+  margin-bottom: 3px;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info .widget-video--info--comments--info--content--name {
+  display: inline-block;
+  margin-right: 5px;
+  color: #167ac6;
+  font-weight: 700;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--info .widget-video--info--comments--info--time {
+  color: #8b919e;
+}
+.widget .widget-video--info--comments .widget-video--info--comments--reply i {
+  margin-right: 10px;
+}
+.widget .widget-video--info--more--comments {
+  margin-top: 20px;
+}
+.widget .widget-video--info--more--comments a {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7e838e;
+  font-style: normal;
+}
+html,
+body,
+navbar,
+header,
+footer {
+  margin: 0;
+}
+/* ------ Normalize ----- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: url("../images/bg-dashboard-1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+main {
+  padding: 45px 40px 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
